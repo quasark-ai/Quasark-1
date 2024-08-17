@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Parisienne&family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fondamento:ital@0;1&family=Orbitron:wght@400..900&family=Parisienne&family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fondamento:ital@0;1&family=Orbitron:wght@400..900&family=Parisienne&family=Playwrite+ES:wght@100..400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    position: absolute; /* Change to fixed to stay visible while scrolling */
+    top: 2vh;
+    width: 100vw;
+    z-index: 1;
+    border-bottom: 1px solid  #fca311;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 4vmin;
+    margin-right: 4vmin;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:  #fca311;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3vmin;
+}
+.logo
+{
+    width: 12vmin;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+.hero {
+    position: absolute; /* Change to relative for proper stacking */
+    width: 100vw;
+    min-height: 100vh; /* Use min-height instead of height */
+    background-color: #fca311;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vw;
+    z-index: 3;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    line-height: 22vmin;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 18vmin;
+    padding: 10vmin;
+    border-top-right-radius: 50px;
+    border: 3px solid #D8D5CD;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hero h1 span {
+    color: #D8D5CD;
+}
+
+.about {
+    position: relative; 
+    background-color: #14213d;
+    width: 100vw;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.aboutimage
+{
+    z-index: 1;
+}
+.about .aboutimage img
+{
+    border-radius: 50%;
+    width: 48vw;
+    height: 48vw;
+    z-index: 4;
+    margin-right: 1vw;
+}
+.aboutcontent {
+    position: relative;
+    left: 5vw;
+    width: 40vw;
+}
+
+.aboutcontent h1 {
+    color:  #fca311;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 10vmin;
+  
+}
+
+.aboutcontent h2 {
+    position: relative;
+    top: -5vh;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 3vmin;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+}
+.projects
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 5vh;
+    justify-content: space-evenly;
+}
+.projects h1
+{
+    color:  #0F0F0F;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 10vmin;
+}
+.projects .main
+{
+    width: 80vw;
+    border: 2px solid black;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.projects .main .content
+{
+    border-right: 2px solid black;
+    padding: 2vmin;
+    width: 35vw;
+}
+.projects .main .tech
+{
+    padding: 2vmin;
+    width: 35vw;
+}
+.projects .main .content h2
+{
+    position: relative;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 5vmin;
+    color: #0F0F0F;
+    letter-spacing: 1px; 
+}
+.projects .main p
+{
+    position: relative;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 2vmin;
+    color: #555;
+    letter-spacing: 1px; 
+}
+.projects .main .tech h2
+{
+    position: relative;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 5vmin;
+    color: #0F0F0F;
+    letter-spacing: 1px; 
+}
+.aboutus {
+    position: relative; 
+    background-color: white;
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aboutuscontent
+{
+    width: 40vw;
+}
+
+.aboutuscontent h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 900;
+    font-size: 10vmin;
+    font-style: italic;
+    color: #0F0F0F;
+}
+
+.aboutuscontent h2 {
+    position: relative;
+    top: -5vh;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 4vmin;
+    color: #0F0F0F;
+    letter-spacing: 1px;
+}
+.aboutuscontent h2 a
+{
+    font-size: 3vmin;
+    color: #14213d;
+    text-decoration: none;
+}
+.aboutuscontent h2 a:hover
+{
+    text-decoration: underline;
+}
+.menu-btn {
+    position: fixed; /* Change to fixed to stay visible */
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    width: 10vmin;
+}/* Existing styles unchanged */
+
+.ai-solution {
+    background-color: #14213d;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ai-solution-content {
+    width: 40%;
+    text-align: center;
+
+}
+
+.ai-solution h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 10vmin;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #fca311;
+}
+
+.ai-solution p {
+    position: relative;
+    top: 0vh;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 3vmin;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+}
+
+.ai-solution-items {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    
+}
+
+.ai-solution-item
+{
+    border: 2px solid #fca311;
+    padding: 2vmin;
+    margin-bottom: 2vmin;
+    border-radius: 10px;
+}
+
+.ai-solution-item h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 3vmin;
+    text-align: center;
+    color:#e5e5e5;
+}
+
+.ai-solution-item h2 svg
+{
+    position: relative;
+    top: 1vh;
+    fill: #fca311;
+    width: 4vmin;
+    margin-left: 2vmin;
+}
+.contact-us {
+    padding: 40px 20px;
+    background-color: #14213d;
+    text-align: center;
+}
+.contact-us-content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.footerlogo
+{
+    align-items: center;
+    width: 30vmin;
+}
+.contact-us p {
+    position: relative;
+
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 3vmin;
+    color: #fca311;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.contact-item {
+
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-item h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 5vmin;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    color: #fca311;
+}
+
+.contact-item p {
+    position: relative;
+    top:0vh;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 3vmin;
+   
+}
+
+.contact-item a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 3vmin;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+.copyright
+{
+    position: relative;
+    top: 2vh;
+}
+@media (max-width: 1025px) {
+    .hero h1 {
+        font-size: 14vmin;
+        padding: 5vmin;
+        text-align: center; /* Center-align text for small screens */
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .projects .main
+    {
+        flex-direction: column;
+    }
+    .projects .main .content
+    {
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+    .projects .main .tech, .projects .main .content
+    {
+        width: 75vw;
+    }
+    .ai-solution
+    {
+        flex-direction: column;
+    }
+    .ai-solution-content
+    {
+        width: 80%;
+    }
+    .ai-solution-items
+    {
+        width: 80vw;
+    }
+
+    .aboutus
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutuscontent
+    {
+        width: 80vw;
+    }
+    .aboutuscontent h2
+    {
+        position: relative;
+        top: 0vh;
+    }
+    .aboutcontent {
+        left: 0;
+        width: 90vw;
+    }
+    .contact-us-content
+    {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    nav
+    {
+        background-color: #1f2833;
+      padding: 0%;
+      position: absolute; 
+       justify-content: center;
+       border-bottom-right-radius: 50%;
+       z-index: 999999999999999999999999999999;
+       border-bottom: none;
+    }
+    nav ul
+    {
+      flex-direction: column;
+      min-width: 100vw;
+      min-height: 40vh;
+      margin-top: -2000px;
+      transition: all 0.5s ease;
+      z-index: 999999;
+     
+    }
+    nav li
+    {
+      margin: 30px auto;
+    }
+    nav ul li a
+    {
+        font-size: 5vmin;
+    }
+    button
+    {
+      display: inline-block;
+    }
+    .mobile-menu
+    {
+      margin-top: 0px;
+      border-bottom-right-radius: 30%;
+    }
+    .menu-btn
+    {
+      position: absolute;
+      top: 2vh;
+      right: 30px;
+      cursor: pointer;
+      display: block;
+      z-index: 3;
+    }
+   
+}
